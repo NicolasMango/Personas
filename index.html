@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  	crossorigin="anonymous">
+	</script>
 </head>
 <body>
 	<div class="row">
@@ -17,16 +20,21 @@
   				<input type="text" id="edad"> </input>
   				<label for="apellido"> Foto:</label>
   				<input type="text" id="foto"> </input>
+  				<label for="domicilio"> Domicilio:</label>
+  				<textarea id="domicilio"> </textarea>
   				<input type="button" id="registrar" value="registrar">
 			</form>
+			<input type="button" id="close">
 		</div>
 		<div class="personas" id="personas">
+
 			<div class="persona row">
 				<div class="columna">
 					<img src="http://cinemadevoto.neexcdn.com.ar/182.png" alt="">
 				</div>
 				<div class="columna">
 					<label for="persona-nombre"> Nombre de la persona</label>
+                    <div class="form-control" id="peli-nombre"></div>
 
 					<label for="persona-apellido"> Apellido de la persona</label>
 
@@ -36,5 +44,7 @@
 			
 		</div>
 	</div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+body{
+	max-width: 1300px;
+}
+
 .row{
 	display: flex;
 	flex-direction: row;
@@ -8,13 +12,26 @@
 	display: flex;
 }
 
+.personas{
+	flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .persona {
 	max-height: 200px;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: -1%
 }
 
 .persona img {
 	max-height: 50%;
 	max-width: 50%;
+}
+
+.close {
+	background-color: blue;
+	max-width: 10px;
+	max-height: 10px;
 }
