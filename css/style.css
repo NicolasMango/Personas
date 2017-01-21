@@ -1,0 +1,20 @@
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.columna{
+	flex-direction: column;
+	display: flex;
+}
+
+.persona {
+	max-height: 200px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.persona img {
+	max-height: 50%;
+	max-width: 50%;
+}
