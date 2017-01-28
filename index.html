@@ -3,48 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Registro de usuarios</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
   	crossorigin="anonymous">
 	</script>
 </head>
 <body>
-	<div class="row">
-		<div>
-			<form class="columna">
-				<label for="nombre"> Nombre:</label>
-  				<input type="text" id="nombre"> </input>
-  				<label for="apellido"> Apellido:</label>
-  				<input type="text" id="apellido"> </input>
-  				<label for="apellido"> Edad:</label>
-  				<input type="text" id="edad"> </input>
-  				<label for="apellido"> Foto:</label>
-  				<input type="text" id="foto"> </input>
-  				<label for="domicilio"> Domicilio:</label>
-  				<textarea id="domicilio"> </textarea>
-  				<input type="button" id="registrar" value="registrar">
-			</form>
-			<input type="button" id="close">
-		</div>
-		<div class="personas" id="personas">
+	<div class="container-fluid">
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<span id="close" class="glyphicon glyphicon-chevron-right"></span>
+				<form>
+				  <div class="form-group">
+				    <label for="nombre">Nombre:</label>
+				    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+				  </div>
+				  <div class="form-group">
+				    <label for="apellido">Apellido:</label>
+				    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+				  </div>
+				  <div class="form-group">
+				    <label for="edad">Edad:</label>
+				    <input type="number" class="form-control" id="edad" placeholder="Edad">
+				  </div>
+				  <div class="form-group">
+				    <label for="foto">Foto:</label>
+				    <input type="file" id="foto">
+				  </div>
+				  <div class="form-group">
+				    <label for="domicilio">Domicilio:</label>
+				    <textarea class="form-control" id="domicilio" rows="2"></textarea>
+				  </div>
 
-			<div class="persona row">
-				<div class="columna">
-					<img src="http://cinemadevoto.neexcdn.com.ar/182.png" alt="">
-				</div>
-				<div class="columna">
-					<label for="persona-nombre"> Nombre de la persona</label>
-                    <div class="form-control" id="peli-nombre"></div>
+				  <div id="registrar" class="btn btn-default">Registrar</div>
+				</form>
 
-					<label for="persona-apellido"> Apellido de la persona</label>
-
-					<label for="persona-edad"> Edad de la persona</label>
-				</div>
 			</div>
-			
+
+			<div class="col-md-8 personas" id="personas">
+				<span id="abrir" class="rightarrow glyphicon glyphicon-chevron-right" style="position: absolute;left: 20px;top: -37px;font-size: 26px;cursor: pointer;display: none"></span>
+				
+			</div>
 		</div>
 	</div>
-
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,12 +1,18 @@
 body{
-	max-width: 1300px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
 }
-
 .row{
 	display: flex;
 	flex-direction: row;
 }
-
+.col-md-4 span{
+	float: right;
+    cursor: pointer;
+    margin-top: -20px;
+    font-size: 26px;
+}
 .columna{
 	flex-direction: column;
 	display: flex;
@@ -18,16 +24,25 @@ body{
     flex-wrap: wrap;
 }
 
-.persona {
-	max-height: 200px;
-	margin-bottom: 5%;
-    margin-left: 5%;
-    margin-right: -1%
+.persona{
+    margin-left: 2%;
+    margin-bottom: 1%;
+    background-color: aquamarine;
+    margin-right: -1%;
+    max-height: 33%;
+
+}
+/*.persona {
+    margin-left: -2%;
+    margin-right: -1%;
+    height: 42%;
+    width: 50%;
 }
 
 .persona img {
-	max-height: 50%;
-	max-width: 50%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
 }
 
 .close {
